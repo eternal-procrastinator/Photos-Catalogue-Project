@@ -1,0 +1,85 @@
+.list__element{
+    position: relative;
+}
+
+.list__text{
+    margin: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: blue;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.list__text:hover{
+    color: blueviolet;
+}
+
+.list__text.active{
+    color: darkmagenta;
+}
+
+.list__text::before{
+    display: inline-block;
+    content: "";
+    margin-right: 10px;
+    align-items: center;
+    color: red;
+    width: 0.45em;
+    height: 0.45em;
+    border-style: solid;
+    border-width: 0.05em 0.05em 0 0;
+    position: relative;
+    top: 0.3em;
+    vertical-align: top;
+    left: 0;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+}
+
+.list__text.active::before{
+    transform: rotate(135deg);
+}
+
+.list__star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/dark_star.svg");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    align-self: flex-start;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.list__star--active{
+    background-image: url("../../images/light_star.svg");
+}
+
+.list__image{
+    margin-left: 30px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.list__title{
+    margin: 20px 20px 20px 40px;
+    font-size: 20px;
+    line-height: 24px;
+    color: blue;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}

@@ -1,0 +1,32 @@
+.modal {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+}
+
+.modal--hidden{
+    display: none;
+}
+
+.modal__content {
+    position: relative;
+    background-color: transparent;
+    margin: 50px auto;
+    padding: 10px;
+    width: 620px;
+    height: 620px;
+    z-index: 11;
+}
+
+.modal__image{
+    width: 600px;
+    height: 600px;
+    cursor: pointer;
+}
